@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amaysim</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <!-- <%= link_to "Help", help_mobile_path %> -->
+    <!--  <a href="/help/mobile">Help</a> Same as above line-->
+    <!-- <%= link_to "Help URL", help_mobile_url %> -->
+
+    <%= render 'layouts/nav' %>
+    <%= render 'pages/jumbo' %>
+
+    <!-- <div class="container"> -->
+      <%= yield %>
+    <!-- </div> -->
+  </body>
+</html>
